@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-        <title>MoodMate</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>MoodMate</h1>
-            <p>Select your mood and get a personalized list!</p>
-        </header>
 
-        <main>
-            <div id="moodSelector">
-                <p>How do you feel today?</p>
-                <select id="moodDropdown">
-                    <option value="" selected>Select a mood</option>
-                    <option value="happy">Happy</option>
-                    <option value="sad">Sad</option>
-                    <option value="relaxed">Relaxed</option>
-                    <option value="energetic">Energetic</option>
-                </select>
-                <button id="generatePlaylist">Get Playlist</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodMate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>MoodMate</h1>
+        <p>Select your mood and get a personalized list!</p>
+    </header>
+
+    <main>
+        <div id="moodSelector">
+            <p>How do you feel today?</p>
+            <select id="moodDropdown">
+                <option value="" selected>Select a mood</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="relaxed">Relaxed</option>
+                <option value="energetic">Energetic</option>
+            </select>
+            <button id="generatePlaylist">Get Playlist</button>
+        </div>
+
+        <section id="result">
+            <h2>Your Mood Playlist</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="playlist"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
+        </section>
+    </main>
 
-            <section id="result">
-                <h2>Your Mood Playlist</h2>
-                <div id="playlist"></div>
-            </section>
-        </main>
+    <footer>
+        <p>Made by Henry Dao</p>
+    </footer>
 
-        <footer>
-            <p>Made by Henry Dao with Love</p>
-        </footer>
+    <script type="module" src="./scripts/app.js"></script>
+</body>
 
-        <script type="module" src="./scripts/app.js"></script>
-    </body>
 </html>

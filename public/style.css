@@ -25,3 +25,50 @@ header p{
 main {
     text-align: center;
 }
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-item {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.listThumbnail {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.listTitle {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.listLink {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ff4c4c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.listLink:hover {
+    background-color: #ff0000;
+}

@@ -12,3 +12,7 @@ MoodMate is a web-based application that curates personalized YouTube & Spotify 
 - Backend: Node.js with Express.js
 - API: YouTube Data API v3
 - Environment Configuration: dotenv
+
+3. Run the project:
+- npm intall 
+- npm start
